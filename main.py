@@ -1,6 +1,10 @@
-def main():
-    print("Hello from devops-engineer-from-scratch-project-313!")
+from typing import Union
+
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/ping")
+def read_root():
+    return "pong"
