@@ -2,9 +2,4 @@ install:
 	uv sync
 
 start:
-	uv run main.py
-
-# dev aliases
-s:
-	uv run main.py
-
+	uv run fastapi dev --host 0.0.0.0 --port 8080
